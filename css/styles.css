@@ -1,0 +1,123 @@
+/* 
+"Imperial Red":"e63946",
+"Honeydew":"f1faee",
+"Powder Blue":"a8dadc",
+"Celadon Blue":"457b9d",
+"Prussian Blue":"1d3557"} */
+
+
+/* GLOBAL STYLES */
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+  color: #1d3557;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+  height: 300px;
+}
+a {
+  color: #ffffff;
+
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* ABOUT / PROFILE */
+header {
+  background-color: #1d3557;
+  color: #f1faee;
+  text-align: center;
+}
+
+h1 {
+
+  font-size: 60px;
+  line-height: 1;
+}
+
+h2 {
+  font-size:40px;
+  
+}
+
+h1, h2{
+  font-family: 'Neuton', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.content-wrap {
+  width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* PROJECTS / PORTFOLIO */
+.projects {
+
+}
+.projects a {
+
+}
+.project-item {
+  overflow: hidden;
+  border-bottom: 1px dashed #1d3557;
+  padding: 25px 0;
+}
+.project-item img {
+  float: left;
+  margin-right: 20px;
+}
+.project-item h3 {
+  margin-top: 0;
+}
+
+.projects .btn {
+  color: #f1faee;
+  background-color: #1d3557;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.projects .btn:hover {
+  background: #e63946;
+}
+/* EXPERIENCE */
+.experience {
+}
+/* EDUCATION */
+.education {
+}
+
+/* CONTACT */
+footer{
+  background-color: #e63946;
+  color: honeydew;
+  text-align: center;
+}
+
+.contact-list {
+list-style: none;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
