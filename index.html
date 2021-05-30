@@ -5,106 +5,155 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ruslan Nizamov: Digital Resume</title>
+  <link href="./css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Neuton&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <main>
+  <main class="container-fluid m-0 p-0">
     <!-- ***********************  ABOUT / PROFILE  *********************** -->
     <header>
-      <div class="content-wrap">
-        <h1>Ruslan Nizamov</h1>
-        <h2>Front End Developer</h2>
-        <p>
-          Thank you for stopping by. My ultimate goal is to share my knowledge and expertise with people around me. I
-          life-long learner with a passion for discovering new and exciting things in programing, art and education. I
-          continue challenge ideas in create ways without any regrets.
-        </p>
+      <div class="p-5">
+        <div class="title-text">
+          <h1>Hey, I'm Russell.</h1>
+          <h1>Mobile and Web Developer</h1>
+        </div>
+        <h2>
+          A life-long learner with a passion for discovering new and exciting things in programing, arts and education.
+        </h2>
       </div>
     </header>
+    <!-- ***********************  end ABOUT / PROFILE  *********************** -->
+
+    <!-- ***********************  SKILLS  *********************** -->
+    <div class="container">
+      <div class="">
+        <div class="text-center">
+          <i class="fas fa-laptop-code icon m-5"></i>
+          <h1 class="mb-4">Front-end Developer</h1>
+          <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+          <hr class="thin_border" />
+          <i class="fas fa-code-branch m-5"></i>
+          <p class="">Dev Tools:</p>
+          <ul class="">
+            <li>VS Code</li>
+            <li>Github</li>
+            <li>Terminal</li>
+          </ul>
+          <p class="">Languages I speak:</p>
+          <p>JavaScript, Python, HTML, CSS</p>
+
+          <hr class="thin_border" />
+          <i class="fas fa-database m-5"></i>
+          <p class="">Databases I use:</p>
+          <ul>
+            <li>SQL</li>
+          </ul>
+          <hr class="thin_border" />
+          <i class="fas fa-terminal m-5"></i>
+          <p class="">Frameworks:</p>
+          <ul>
+            <li>React</li>
+            <li>React Native</li>
+            <li>Node</li>
+            <li>Flask</li>
+          </ul>
+          <hr class="thin_border" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ***********************  END SKILLS  *********************** -->
 
     <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-    <section class="projects">
-      <div class="content-wrap">
-        <h2>Featured Projects</h2>
-        <p>
-          View selected projects below. More information can be found at
-          <a href="http://ruslannizamov.com">ruslannizamov.com</a>.
-        </p>
+    <section class="projects pt-5">
+      <div class="container ">
+        <div class="row">
+          <h1 class="text-center pb-4">Projects</h1>
+          <h2 class="text-center pb-4">Here are a few projects I've worked on recently. Want to see more?</h2>
 
-        <!-- Copy the whole <section> block to add more projects. -->
-        <section class="project-item">
-          <img src="images/icon.png" alt="description of image" />
-          <h3>YottaBites: Canadian Citizenship FlashCards</h3>
+          <!-- project #1 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 ">
+            <div class="container-img mt-4 ">
+              <img src="images/yotta-prep.png" alt="..." class="card-img  mb-2 mt-2">
+              <div class="overlay">
+                <div class="">
+                  <div class="overlay-text">Yotta Prep</div>
+                  <button type="button" class="btn btn-danger btn-overlay">Visit GitHub
+                    Page</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end project #1 -->
 
-          <p>
-            FlashCards App with multiple choice quiz was designed to help new immigrants to Canada to learn some useful
-            knowledge and practice their citizenship tests.
-          </p>
-          <a class="btn" href="#" target="_blank">View project / case study</a>
+          <!-- project #2 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="container-img mt-4">
+              <img src="images/blog.jpg" alt="..." class="card-img rounded mb-2 mt-2">
+              <div class="overlay">
+                <div class="">
+                  <div class="overlay-text">Blog</div>
+                  <button type="button" class="btn btn-danger btn-overlay">Visit GitHub
+                    Page</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end project #2 -->
+
+          <!-- project #3 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="container-img mt-4">
+              <img src="images/todo.jpg" alt="..." class="card-img rounded mb-2 mt-2">
+              <div class="overlay">
+                <div class="">
+                  <div class="overlay-text">Todo List</div>
+                  <button type="button" class="btn btn-danger btn-overlay">Visit GitHub
+                    Page</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end project #3 -->
+
+          <!-- project #4 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="container-img mt-4">
+              <img src="images/fin-app.gif" alt="..." class="card-img rounded mb-2 mt-2">
+              <div class="overlay">
+                <div class="">
+                  <div class="overlay-text text-center">Financial Dashboard</div>
+                  <button type="button" class="btn btn-danger btn-overlay">Visit GitHub
+                    Page</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end project #4 -->
+
+
+        </div>
       </div>
     </section>
-    <!-- End of Project block. -->
-    </section>
+    <!-- ******************** END  PROJECTS / PORTFOLIO  ********************* -->
 
-    <!-- ***********************  WORK EXPERIENCE  *********************** -->
-    <section class="experience">
-      <div class="content-wrap">
-        <h2>Work Experience</h2>
-        <!-- Copy this whole <section> block to add more jobs. -->
-        <section>
-          <h3>Android Developer</h3>
-          <p>Freelance at YottaBites</p>
-          <p>2019 - current</p>
-          <p>Developed applications using React Native framework.</p>
-          <ul>
-            <li>Created Android applications using React Native</li>
-            <li>Published application on GooglePlay store</li>
-            <li>Responsible for testing and deployment of various features</li>
-          </ul>
-      </div>
-    </section>
-    <!-- End of Job block. -->
-    </section>
+    <!-- ********************  SKILLS  ********************* -->
 
-    <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-    <section class="education">
-      <div class="content-wrap">
-        <h2>Education</h2>
 
-        <!-- Copy this whole <section> block to add more schools. -->
-        <section>
-          <h3>Simon Fraser University - Burnaby, Canada</h3>
-          <p>Master of Education in TEAL</p>
-          <p>Summary or accomplishments.</p>
-        </section>
-        <section>
-          <h3>Vancouver Island University - Nanaimo, Canada</h3>
-          <p>Bachelor of Hospitality ManagementL</p>
-          <p>Summary or accomplishments.</p>
-        </section>
-      </div>
-      <!-- End of School block. -->
-    </section>
 
-    <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-    <footer>
-      <div class="content-wrap">
-        <h2>Let's Keep in Touch!</h2>
+    <!-- ********************  END SKILLS ********************* -->
 
-        <!-- Social media and contact links. Add or remove any networks. -->
-        <ul class="contact-list">
-          <li><a href="mailto:nizamov.ruslan@gmail.comcom">nizamov.ruslan@gmail.com</a></li>
-          <li>
-            <a href="http://yourwebsite.com" target="_blank">yottabites.com</a>
-          </li>
-          <li><a href="#" target="_blank">Twitter</a></li>
-          <li><a href="#" target="_blank">LinkedIn</a></li>
-        </ul>
-      </div>
-    </footer>
+
+
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
