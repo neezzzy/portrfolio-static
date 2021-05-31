@@ -11,18 +11,19 @@ html {}
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
-
+  font-family: 'Lora', serif;
+ 
 }
 
 h1 {
-  font-family: 'Neuton', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-shadow: rgb(0, 0, 0) 0px 0px 1px;
 }
 
 h2 {
   text-shadow: rgb(0, 0, 0) 0px 0px 1px;
+  font-family: 'Lora', serif;
 }
 
 ul {
@@ -45,6 +46,11 @@ header {
 
 
 /* SKILLS */
+
+.header-small {
+  color: #3edbf0;
+}
+
 
 i {
   color: #3edbf0;
