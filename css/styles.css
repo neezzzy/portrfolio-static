@@ -39,6 +39,9 @@ li {
   font-size: 1rem;
 }
 
+a {
+  text-decoration: none;
+}
 
 /* ABOUT / PROFILE */
 header {
@@ -136,7 +139,7 @@ img {
   position: absolute;
   top: 30%;
   left: 50%;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   transform: translate(-50%, -50%);
 }
 
@@ -145,5 +148,36 @@ img {
   justify-content: center;
   align-items: center;
   z-index: 2;
-  
+
+}
+
+
+/* FOOTER */
+.footer-section {
+  background-color: #77acf1;
+  color: #ffffff;
+  font-family: 'Lora', serif;
+}
+
+.fab {
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1em;
+}
+
+.far {
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1em;
+}
+
+.btn-outline-lighty {
+  color: #fff;
+  background-color: #0495c9;
+  border-color: #357ebd; /*set the color you want here*/
+}
+.btn-outline-light:hover, .btn-outline-light:focus, .btn-outline-light:active, .btn-outline-light.active, .open>.dropdown-toggle.btn-outline-light {
+  color: #fff;
+  background-color: #3edbf0;
+  border-color: #ffffff; /*set the color you want here*/
 }
