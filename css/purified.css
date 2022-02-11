@@ -11,19 +11,19 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   position: relative;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-shadow: rgb(0, 0, 0) 0px 0px 1px;
   font-size: 36px;
 }
 
 h2 {
   text-shadow: rgb(0, 0, 0) 0px 0px 1px;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
 }
 
 p {
@@ -73,7 +73,7 @@ img.avatar {
 .thin_border {
   border-left: 1px solid #e2e2e2;
   background-color: rgb(132, 132, 132);
-  content: '';
+  content: "";
 }
 
 /* PROJECTS / PORTFOLIO */
@@ -89,11 +89,11 @@ img.avatar {
   object-fit: cover;
   object-position: 0 0;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.911);
-  filter: brightness(0.4) invert(0.1);
+  filter: brightness(0.2) invert(0.1);
 }
 
 .centered {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-variant-caps: all-petite-caps;
   position: absolute;
   top: 50%;
@@ -117,7 +117,7 @@ img.avatar {
   width: 100%;
   opacity: 0;
   transition: all 0.5s ease-in-out;
-  background-color: #04009a;
+  background-color: #004170;
 }
 
 .container-img:hover .centered {
@@ -155,7 +155,7 @@ img.avatar {
   background-color: #77acf1;
   background-color: hsl(1213.9°, 50.6, 94.5);
   color: #000000;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
 }
 
 .fab {
