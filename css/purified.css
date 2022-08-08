@@ -1,8 +1,8 @@
 /* GLOBAL STYLES */
 :root {
   --primary-bg-color: hsl(241, 100%, 30%);
-  --secondary-bg-color: hsl(213, 81%, 70%);
-  --primary-add1-color: hsl(187, 85%, 59%);
+  --secondary-bg-color: hsl(213, 81%, 50%);
+  --primary-add1-color: hsl(187, 85%, 19%);
   --secondary-add2-color: hsl(178, 96%, 87%);
   --white: hsl(0, 0%, 100%);
   --off-white: hsl(0, 0%, 89%);
@@ -23,17 +23,17 @@ body {
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  text-shadow: hsl(0, 100%, 0%) 0px 0px 1px;
+  text-shadow: hsl(0, 0%, 0%) 0px 0px 1px;
   font-size: 36px;
 }
 
 h2 {
-  text-shadow: hsl(0, 100%, 0%) 0px 0px 1px;
+  text-shadow: hsl(0, 0%, 0%) 0px 0px 1px;
   font-family: "Lora", serif;
 }
 
 p {
-  text-shadow: hsl(0, 100%, 0%) 0px 0px 1px;
+  text-shadow: hsl(0, 0%, 0%) 0px 0px 1px;
   font-size: 1.6rem;
 }
 
@@ -85,7 +85,7 @@ img.avatar {
 /* PROJECTS / PORTFOLIO */
 .container-img {
   position: relative;
-  cursor: pointer;
+
 }
 
 .project-img {
@@ -205,3 +205,5 @@ img.avatar {
     display: none;
   }
 }
+
+
