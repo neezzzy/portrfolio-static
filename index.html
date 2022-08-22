@@ -6,406 +6,351 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="This is Ruslan Nizamov's personal portfolio website hosted on GitHub pages." />
   <title>Ruslan Nizamov: Digital Resume</title>
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link as="style" rel="stylesheet preload prefetch"
-    href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@700&display=swap" type="text/css"
-    crossorigin="anonymous" />
-  <link rel="shortcut icon" href="#">
+
   <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet preload prefetch"
     as="style" type="text/css" crossorigin="anonymous"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <!-- CUSTOM STYLESHEET -->
-  <link rel="stylesheet" href="/css/purified.css" />
+  <link rel="stylesheet" href="/css/index.css" />
   <!-- JQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <!-- GSAP + plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
+    integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/CSSRulePlugin.min.js"
+    integrity="sha512-LTEbTFikHcv/OwMKB2/SeC47wuF/Jxa8b75Bb8FF6QcuoDYuypI8OEIN1Z2IUMnziCtdd7EyjvLIW5Esmenucg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"
+    integrity="sha512-6BvDODEWgjWWyBrg6YFio6xmzgKWpf54tDlnCtG05m++/jgh/7jQcx6jUJrq44lB84cf68FzYiT0LipabA5g8g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-  <main class="container-fluid m-0 p-0">
-    <!-- ***********************  ABOUT / PROFILE  *********************** -->
-    <header>
-      <div class="pt-3">
-        <div class="title-text">
-          <h1 class="p-2">Hey, I'm Russell <span class="emojy">👓💻</span></h1>
-          <h2 class="p-2">Mobile and Web Developer</h2>
+  <main class="main">
+    <!-- ***********************  HERO  *********************** -->
+    <header class="panel">
+
+      <section class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-main">
+          <h1 class="hero-title">
+            <span class=" title-wrapper">
+
+              <span class="title">
+                <div>
+                  Russell
+                </div>
+              </span>
+            </span>
+            <span class="title-wrapper">
+              <span class="title">
+                <div>
+                  Nizamov
+                </div>
+              </span>
+            </span>
+            <span class="title-wrapper">
+              <span class="title">
+                <div>
+                  Web
+                </div>
+              </span>
+            </span>
+            <span class="title-wrapper">
+              <span class="title">
+                <div>
+                  Developer
+                </div>
+              </span>
+            </span>
+          </h1>
+          <div class="d-flex justify-content-between-md gap-5">
+            <a aria-label="Visit Ruslan Nizamov's LinkedIn" class="btn btn-outline-dark btn-lg-md" href="https://www.linkedin.com/in/nizamovruslan/">LinkedIn</a>
+            <a aria-label="Visit Ruslan Nizamov's github" class="btn btn-outline-dark btn-lg-md" href="https://github.com/neezzzy">GitHub</a>
+          </div>
         </div>
-        <h3 class="pt-2">
-          A life-long learner who ❤️ programing, arts and education.
-        </h3>
-        <img class="avatar img-fluid" width="640" height="360" src="./images/avataaars.svg"
-          alt="Russel's avatar image" />
-      </div>
+        <div class="scrollDownText">
+          <i class="bi bi-arrow-down-circle"></i>
+        </div>
+      </section>
     </header>
-    <!-- ***********************  end ABOUT / PROFILE  *********************** -->
+    <!-- ***********************  end HERO  *********************** -->
 
-    <!-- ***********************  SKILLS  *********************** -->
-    <div class="container">
-      <div class="mt-0">
-        <div class="text-center">
-          <div class="m-4">
-            <img src="icons/computer.svg" class="main-icons" alt="computer icon" />
-          </div>
 
-          <h2 class="">
-            Coding gives me superpowers. <span>🦸‍♂️</span>
-          </h2>
-          <hr class="thin_border" />
-          <div class="m-4">
-            <img src="icons/git.svg" class="main-icons" alt="database icon" />
-          </div>
-          <p class="header-small">Dev Tools:</p>
-          <ul class="">
-            <li>VS Code</li>
-            <li>Github</li>
-            <li>Terminal</li>
-            <li>Balsamiq</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe Photoshop</li>
-          </ul>
-          <hr class="thin_border" />
-          <p class="header-small">Languages I speak:</p>
-          <p>JavaScript, Java, Python, HTML, CSS</p>
-
-          <hr class="thin_border" />
-          <div class="m-4">
-            <img src="icons/db.svg" class="main-icons" alt="database icon" />
-          </div>
-          <p class="header-small">Databases I use:</p>
-          <ul>
-            <li>SQL</li>
-            <li>MongoDB</li>
-            <li>Mongoose</li>
-          </ul>
-          <hr class="thin_border" />
-          <div class="m-4">
-            <img src="icons/code.svg" class="main-icons" alt="code icon" />
-          </div>
-          <p class="header-small">Frameworks/Libraries:</p>
-          <ul>
-            <li>React</li>
-            <li>React Native</li>
-            <li>Node</li>
-            <li>Flask</li>
-            <li>Streamlit</li>
-            <li>Bootstrap</li>
-            <li>Tailwind CSS</li>
-            <li>MUI</li>
-            <li>jQuery/AJAX</li>
-          </ul>
-          <hr class="thin_border" />
+    <!-- ***********************  ABOUT  *********************** -->
+    <section id="about" class="panel container">
+      <hr class="thin_border" />
+      <div class="about-wrapper">
+        <h2>About me</h2>
+        <div class="about-text">
+          <p>Since I discovered programming six years ago, I have loved creating websites, making computer games and
+            coding solutions to solve real-world problems. I never thought that I might want to pursue it as a career in
+            future.</p>
+          <p>I graduated with a Master's Degree in Education. Currently, I am enrolled in the Advanced Software
+            Development certificate program to be a professional software and web developer.</p>
+          <p>In the past few years, I have learned and used React, JavaScript, Python, and Bootstrap to build the
+            front-end. I also learned how to use Node and Express to implement the back-end.</p>
+          <p>I have over 50 different certificates of completion from <a aria-label="Visit LinkedIn Learning website" href="https://www.linkedin.com/learning/"><b>LinkedIn
+                Learning</b></a>, <a aria-label="Visit Udemy" href="https://www.udemy.com/"><b>Udemy</b></a>, and <a aria-label="Visit Coursera" href="https://www.coursera.org/"><b>Coursera</b></a>, and I continually
+            add new knowledge about new tech.</p>
+          <p>My current tech stack is below.</p>
         </div>
-      </div>
-    </div>
-    <!-- ***********************  END SKILLS  *********************** -->
-
-    <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-    <section class="projects pt-5">
-      <div class="container">
-        <div class="row">
-          <h1 class="text-center pb-4">Projects</h1>
-          <h2 class="text-center pb-4">
-            Here are a few projects I've worked on recently. Want to see more?
-          </h2>
-
-          <!-- project Flashcards-->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="container-img mt-4">
-              <div class="centered">
-                <h2 class="title-projects">Yotta Prep Flashcards</h2>
+        <div class="slide-container">
+          <div class="row">
+            <div class="cycle-slideshow" data-cycle-fx=carousel data-cycle-timeout=1000 data-cycle-carousel-visible=6
+              data-cycle-carousel-fluid=true data-cycle-slides="div">
+              <div class="col-xs-2">
+                <a target="_blank" href="https://icons8.com/icon/108784/javascript"><img src="./icons/js.svg"
+                    alt="icon javascript"></a>
               </div>
-              <img src="images/yotta-prep.jpg" alt="..." class="card-img project-img mb-2 mt-2" />
-              <div class="overlay btn-container">
-                <div class="overlay-text w-75 text-center">
-                  Flashcard App with 100+ questions published on the Google
-                  Play Store.
-                </div>
-                <div class="">
-                  <a href="https://play.google.com/store/apps/details?id=com.flashcanada.flashcardcanada"
-                    aria-label="Visit Flashcard App Google PlayStore" type="button" rel="noopener" target="_blank"
-                    class="btn btn-dark btn-lg">Visit Google PlayStore</a>
-                </div>
+              <div class="col-xs-2">
+                <a target="_blank" href="https://icons8.com/icon/21278/css3"><img src="./icons/css.svg"
+                    alt="icon css"></a>
               </div>
-            </div>
-          </div>
-          <!-- end project Flashcards -->
-
-          <!-- project Real-time Chat with Socket IO -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="container-img mt-4">
-              <div class="centered">
-                <h2>Chatter App</h2>
+              <div class="col-xs-2">
+                <a target="_blank" href="https://icons8.com/icon/13679/java"><img src="./icons/java.svg"
+                    alt="icon java"></a>
               </div>
-              <picture>
-                <img src="images/chat-app-ui.jpg" class="card-img project-img mb-2 mt-2" alt="chatter app screenshot"
-                  title="chatter app" />
-              </picture>
-              <div class="overlay btn-container">
-                <div class="overlay-text w-75 text-center">
-                  Built using Socket IO, Express.
-                </div>
-                <div class="">
-                  <a href="https://github.com/neezzzy/chatter" aria-label="Visit GitHub page of the Chatter App"
-                    target="_blank" type="button" rel="noopener" class="btn btn-dark btn-lg">Visit GitHub Page</a>
-                </div>
+              <div class="col-xs-2">
+                <a target="_blank" href="https://icons8.com/icon/13441/python"><img src="./icons/python.svg"
+                    alt="icon python"></a>
+              </div>
+              <div class="col-xs-2">
+                <a target="_blank" href="https://icons8.com/icon/123603/react-native"><img
+                    src="./icons/react-native.svg" alt="icon react"></a>
+              </div>
+              <div class="col-xs-2">
+                <a target="_blank" href="https://icons8.com/icon/hsPbhkOH4FMe/node-js"><img src="./icons/node-js.svg"
+                    alt="icon node"></a>
+              </div>
+              <div class="col-xs-2">
+                <a target="_blank" href="https://icons8.com/icon/74402/mongodb"><img src="./icons/mongodb.svg"
+                    alt="icon mongodb"></a>
+              </div>
+              <div class="col-xs-2">
+                <a target="_blank" href="https://icons8.com/icon/UFXRpPFebwa2/mysql-logo"><img
+                    src="./icons/mysql-logo.svg" alt="icon mysql"></a>
               </div>
             </div>
           </div>
-          <!-- end project Real-time Chat  -->
-
-          <!-- crypto dashboard project -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="container-img mt-4">
-              <div class="centered">
-                <h2>Crypto Dashboard</h2>
-              </div>
-              <picture>
-                <img src="images/crypto-dashboard.jpg" class="card-img project-img mb-2 mt-2"
-                  alt="chatter app screenshot" title="chatter app" />
-              </picture>
-              <div class="overlay btn-container">
-                <div class="overlay-text w-75 text-center">
-                  Built using React, CoinGecko API, Bootstrap, ApexCharts.
-                </div>
-                <div class="">
-                  <a href="https://github.com/neezzzy/crypto-board"
-                    aria-label="Visit GitHub page of the Crypto Dashboard" target="_blank" type="button" rel="noopener"
-                    class="btn btn-dark btn-lg">Visit GitHub Page</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- e-commerce site -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="container-img mt-4">
-              <div class="centered">
-                <h2>Shopping Cart</h2>
-              </div>
-              <img class="card-img project-img mb-2 mt-2" src="images/e-commerce.jpg" alt="blog snapshot image"
-                title="blog snapshot image" />
-              <div class="overlay btn-container">
-                <div class="overlay-text w-75 text-center">
-                  Built with TypeScript, React.
-                </div>
-                <div class="">
-                  <a href="https://github.com/neezzzy/react-ts-online-store" aria-label="Visit portfolio's e-commerce website"
-                    type="button" rel="noopener" target="_blank" class="btn btn-dark btn-lg">Visit GitHub Page</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- project Web Blog-->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="container-img mt-4">
-              <div class="centered">
-                <h2>Web Blog</h2>
-              </div>
-              <img class="card-img project-img mb-2 mt-2" src="images/blog.jpg" alt="blog snapshot image"
-                title="blog snapshot image" />
-              <div class="overlay btn-container">
-                <div class="overlay-text w-75 text-center">
-                  Built with Node.js, Express.js.
-                </div>
-                <div class="">
-                  <a href="https://github.com/neezzzy/blog-website" aria-label="Visit portfolio's blog website"
-                    type="button" rel="noopener" target="_blank" class="btn btn-dark btn-lg">Visit GitHub Page</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end project Web Blog -->
-
-          <!-- project Journal App-->
-          <div class="col-sm-12 col-md-12 col-lg-4">
-            <div class="container-img mt-4">
-              <div class="centered">
-                <h2>My Foodie Restaurant</h2>
-              </div>
-              <img src="images/my-foodie.jpg" alt="..." class="card-img project-img mb-2 mt-2" />
-              <div class="overlay btn-container">
-                <div class="overlay-text w-75 text-center">
-                  Built using CSS, Bootstrap, jQuery
-                </div>
-                <div class="">
-                  <a href="https://github.com/neezzzy/MyFoodie-Restaurant" target="_blank" type="button" rel="noopener"
-                    aria-label="Visit GitHub page of myFoodie Restaurant" class="btn btn-dark btn-lg">Visit GitHub
-                    Page</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end project #3 -->
-
-          <!-- project Keeper App -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="container-img mt-4">
-              <div class="centered">
-                <h2>Keeper App</h2>
-              </div>
-
-              <img class="card-img project-img mb-2 mt-2" src="images/keeper-img.jpg" alt="screenshot of the Keeper App"
-                title="Keeper App" />
-
-              <div class="overlay btn-container">
-                <div class="overlay-text w-75 text-center">
-                  Built with React.
-                </div>
-                <div class="">
-                  <a href="https://github.com/neezzzy/keeper-app"
-                    aria-label="Visit GitHub page of the keeper App project" type="button" rel="noopener"
-                    target="_blank" class="btn btn-dark btn-lg">Visit GitHub Page</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end project #4 -->
-
-          <!-- project Clima APP-->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="container-img mt-4">
-              <div class="centered">
-                <h2>Clima APP</h2>
-              </div>
-              <img class="card-img project-img mb-2 mt-2" src="/images/clima.jpg" alt="" title="" />
-              <div class="overlay btn-container">
-                <div class="overlay-text w-75 text-center">
-                  Built with Flutter for mobile devices.
-                </div>
-                <div class="">
-                  <a href="https://github.com/neezzzy/Clima-Flutter"
-                    aria-label="Visit GitHub page of the Clima App project" type="button" rel="noopener" target="_blank"
-                    class="btn btn-dark btn-lg">Visit GitHub Page</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end project #5 -->
-
-          <!-- project Financial Dashboard-->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="container-img mt-4">
-              <div class="centered">
-                <h2>Financial Dashboard</h2>
-              </div>
-              <picture>
-                <source media="(max-width: 48em)" srcset="images/fin-dashboard.jpg" />
-                <img class="card-img project-img mb-2 mt-2" src="images/fin-dashboard.jpg" alt="" title="" />
-              </picture>
-              <div class="overlay btn-container">
-                <div class="overlay-text w-75 text-center">
-                  Built with Python, Streamlit and FinnHub API.
-                </div>
-                <div class="">
-                  <a href="https://github.com/neezzzy/fin-dashboard" type="button"
-                    aria-label="Visit GitHub page of the Financial Dashboard project" target="_blank" rel="noopener"
-                    class="btn btn-dark btn-lg">Visit GitHub Page</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end project #6 -->
-
-          <!-- project Indigestibles  -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="container-img mt-4">
-              <div class="centered">
-                <h2>Personal Blog</h2>
-              </div>
-              <img src="images/indigest.png" alt="..." class="card-img project-img mb-2 mt-2" />
-              <div class="overlay btn-container">
-                <div class="overlay-text w-75 text-center">
-                  Personal Blog on Heroku using Flask, Python.
-                </div>
-                <div class="">
-                  <a href="https://indigestible-blog-app.herokuapp.com/"
-                    aria-label="Visit a page of personal Blog deployed on Heroku" rel="noopener" type="button"
-                    target="_blank" class="btn btn-dark btn-lg">Visit Blog</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end project #7 -->
-
-          <!-- project todo-app -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="container-img mt-4">
-              <div class="centered">
-                <h2>Todo list</h2>
-              </div>
-
-              <img src="images/todo.jpg" alt="screenshot of the todo app" title="screenshot of the todo app"
-                class="card-img project-img mb-2 mt-2" />
-
-              <div class="overlay btn-container">
-                <div class="overlay-text w-75 text-center">
-                  Built with Node.js, Express.js.
-                </div>
-                <div class="">
-                  <a target="_blank" href="https://github.com/neezzzy/todo-list-v2/tree/main"
-                    aria-label="Visit GitHub page of the Todo App project" type="button" rel="noopener"
-                    class="btn btn-dark btn-lg">Visit GitHub Page</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end project #8 -->
-
-          <!-- project todo-app -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="container-img mt-4">
-              <div class="centered">
-                <h2>Simon Game</h2>
-              </div>
-
-              <img src="images/simon.jpg" alt="screenshot of the Simon App Game" title="screenshot of the todo app"
-                class="card-img project-img mb-2 mt-2" />
-
-              <div class="overlay btn-container">
-                <div class="overlay-text w-75 text-center">
-                  Built with Vanilla JS, HTML, CSS
-                </div>
-                <div class="">
-                  <a target="_blank" href="https://github.com/neezzzy/simon-the-game"
-                    aria-label="Visit GitHub page of the Simon Game project" type="button" rel="noopener"
-                    class="btn btn-dark btn-lg">Visit GitHub Page</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end project #8 -->
-
         </div>
       </div>
     </section>
+    <!-- ***********************  END ABOUT  *********************** -->
+
+    <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+    <section class="panel container" id="projects">
+      <hr class="thin_border" />
+      <div class="projects-wrapper">
+        <h2>Projects</h1>
+          <div>
+            <p>I continue to add new projects to my portfolio. Here are some of the latest projects that I have worked on.
+            </p>
+          </div>
+
+          <!-- FLASHCARDS PROJECT -->
+          <div class="project-container gs_reveal">
+            <div class="gs_reveal_fromRight">
+              <div class="hvr-grow">
+                <a aria-label="Visit Ruslan Nizamov's FlashCards app on Google Play Store" target="_blank" href="https://play.google.com/store/apps/details?id=com.flashcanada.flashcardcanada">
+                  <img class="project-image project-image-scroll " src="images/yotta-prep.webp"
+                    alt="Yotta-Prep FlashCards app screenshot" />
+                </a>
+              </div>
+            </div>
+            <div class="project-description gs_reveal card">
+              <div class="card-body">
+                <h3 class="card-title">Flashcard App</h3>
+                <p class="card-text">100+ questions and answers.</p>
+                <p class="card-text">Flashcards cover everything needed to pass the Canadian Citizenship test.</p>
+                <hr class="thin_border" />
+                <p class="card-text"><i>Built using React Native, Bootstrap and Expo.</i></p>
+                <a class="btn btn-secondary btn-lg btn-block"
+                  href="https://play.google.com/store/apps/details?id=com.flashcanada.flashcardcanada" target="_blank">
+                  <div class="link-wrapper">
+                    <span class="link">Visit GooglePlay Store</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- FLASHCARDS END -->
+
+          <!-- CHAT PROJECT -->
+          <div class="project-container gs_reveal">
+            <div class="gs_reveal_fromLeft">
+              <div class="hvr-grow">
+                <a target="_blank" href="https://github.com/neezzzy/chatter target=">
+                  <img class="project-image-left project-image-scroll" src="images/midnight-chatter.webp"
+                    alt="Chatter App app screenshot" />
+                </a>
+              </div>
+
+            </div>
+            <div class="project-description gs_reveal card">
+              <div class="card-body">
+                <h3 class="card-title">Chatter App</h3>
+                <p class="card-text">Allows multiple users to join the chat and send messages in real time.</p>
+                <hr class="thin_border" />
+                <p class="card-text"><i>Built using Socket IO, Express.</i></p>
+                <a class="btn btn-secondary btn-lg btn-block" href="https://github.com/neezzzy/chatter target=">
+                  <div class="link-wrapper">
+                    <span class="link">Visit GitHub Page</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CHAT PROJECT END-->
+
+          <!-- MyFoodie PROJECT -->
+          <div class="project-container gs_reveal">
+            <div class="gs_reveal_fromRight">
+              <div class="hvr-grow">
+                <a href="https://github.com/neezzzy/MyFoodie-Restaurant" target="_blank"> <img
+                    class="project-image project-image-scroll " src="./images/my-foodie.webp"
+                    alt="MyFoodie app screenshot" />
+              </div></a>
+            </div>
+            <div class="project-description gs_reveal card">
+              <div class="card-body">
+                <h3 class="card-title">My Foodie Restaurant</h3>
+                <p class="card-text">This project was made to prepare for an interview. I've built a sample template
+                  for an imaginary restaurant.</p>
+                <hr class="thin_border" />
+                <p class="card-text"><i>Built using CSS, Bootstrap, jQuery.</i></p>
+                <a class="btn btn-secondary btn-lg btn-block" href="https://github.com/neezzzy/MyFoodie-Restaurant"
+                  target="_blank">
+                  <div class="link-wrapper">
+                    <span class="link">Visit GitHub
+                      Page</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- MyFoodie END -->
+
+
+          <!-- crypto dashboard project -->
+          <div class="project-container gs_reveal">
+            <div class="gs_reveal_fromLeft">
+              <div class="hvr-grow">
+                <a href="https://github.com/neezzzy/crypto-board" target="_blank">
+                  <img class="project-image-left  project-image-scroll " src="./images/crypto-dashboard.webp"
+                    alt="Crypto Dashboard app screenshot" />
+                </a>
+              </div>
+            </div>
+            <div class="project-description gs_reveal card">
+              <div class="card-body">
+                <h3 class="card-title">Crypto Dashboard</h3>
+                <p class="card-text">I've created this project to learn more about cryptocurrencies and financial
+                  charts.</p>
+                <hr class="thin_border" />
+                <p class="card-text"><i>Built with React, CoinGecko API, Bootstrap, ApexCharts.</i></p>
+                <a class="btn btn-secondary btn-lg btn-block" href="https://github.com/neezzzy/crypto-board"
+                  target="_blank">
+                  <div class="link-wrapper">
+                    <span class="link">Visit GitHub
+                      Page</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- dashboard END -->
+
+          <!-- Web Blog PROJECT -->
+          <div class="project-container gs_reveal">
+            <div class="gs_reveal_fromRight">
+              <div class="hvr-grow">
+                <a href="https://indigestible-blog-app.herokuapp.com/" target="_blank">
+                  <img class="project-image project-image-scroll " src="./images/indigest.webp"
+                    alt="Web Blog app screenshot" />
+                </a>
+              </div>
+            </div>
+            <div class="project-description gs_reveal card">
+              <div class="card-body">
+                <h3 class="card-title">Indegestibles Blog</h3>
+                <p class="card-text"></p>
+                <p class="card-text">Personal Blog hosted on Heroku.</p>
+                <hr class="thin_border" />
+                <p class="card-text"><i>Built with Flask, Python.</i></p>
+                <a class="btn btn-secondary btn-lg btn-block" href="https://indigestible-blog-app.herokuapp.com/"
+                  target="_blank">
+                  <div class="link-wrapper">
+                    <span class="link">Visit Blog</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Web Blog END -->
+
+          <!-- Shopping Cart project -->
+          <div class="project-container gs_reveal">
+            <div class="gs_reveal_fromLeft">
+              <div class="hvr-grow">
+                <a href="https://github.com/neezzzy/react-ts-online-store" target="_blank">
+                  <img class="project-image-left project-image-scroll " src="./images/e-commerce.webp"
+                    alt="Shopping Cart app screenshot" />
+                </a>
+              </div>
+            </div>
+            <div class="project-description gs_reveal card">
+              <div class="card-body">
+                <h3 class="card-title">E-commerce Website</h3>
+                <p class="card-text">Advanced Cart Functionality combined with React Context Api allows seamless state
+                  sharing across components.</p>
+                <hr class="thin_border" />
+                <p class="card-text"><i>Built with TypeScript, React.</i></p>
+                <a class="btn btn-secondary btn-lg btn-block" href="https://github.com/neezzzy/react-ts-online-store"
+                  target="_blank">
+                  <div class="link-wrapper">
+                    <span class="link">Visit GitHub
+                      Page</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shopping Cart END -->
+
+
+    </section>
+
     <!-- ******************** END  PROJECTS / PORTFOLIO  ********************* -->
 
     <!-- ******************** FOOTER  ********************* -->
-    <footer class="footer-section pt-5 mt-5">
+    <footer class="footer-section pt-5 mt-5" id="footer">
       <div class="container d-flex flex-column align-items-center">
-        <h2 class="text-center">You can also find me here</h2>
+        <h2 class="text-center text-white">You can also find me here</h2>
         <div class="col-md-5 d-flex flex-row justify-content-center">
           <!-- github -->
           <a class="btn" href="https://neezzzy.github.io/" aria-label="Visit Ruslan Nizamov's github" role="button">
-            <img src="icons/github.svg" class="social-icons" alt="Visit Ruslan Nizamov's twitter" />
+            <img src="icons/github.svg" class="social-icon" alt="Visit Ruslan Nizamov's twitter" />
           </a>
           <!-- email -->
           <a class="btn" href="yottabitesapps@gmail.com/" aria-label="Visit Ruslan Nizamov's email" role="button">
-            <img src="icons/email.svg" class="social-icons" alt="Visit Ruslan Nizamov's twitter" />
+            <img src="icons/email.svg" class="social-icon" alt="Send an email" />
           </a>
           <!-- linkedin -->
           <a class="btn" href="https://www.linkedin.com/in/nizamovruslan/" aria-label="Visit Ruslan Nizamov's LinkedIn"
             role="button">
-            <img src="icons/linkedin.svg" class="social-icons" alt="Visit Ruslan Nizamov's linkedin" />
+            <img src="icons/linkedin.svg" class="social-icon" alt="Visit Ruslan Nizamov's linkedin" />
           </a>
         </div>
         <!-- Copyright -->
-        <div class="text-center p-3">
-          © <span id="year"></span> Made by Ruslan Nizamov
+        <div class="text-center p-3 text-white">
+          © <span id="year"></span> Made by Russell Nizamov
         </div>
         <!-- Copyright end -->
       </div>
@@ -417,11 +362,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"
     async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://malsup.github.io/min/jquery.cycle2.min.js"></script>
+  <script src="https://malsup.github.io/min/jquery.cycle2.carousel.min.js"></script>
+  <script src="scripts/particles.js"></script>
   <script src="scripts/main.js" async></script>
-  <script>
-    // See https://github.com/facebook/react/issues/20829#issuecomment-802088260
-    if (!crossOriginIsolated) SharedArrayBuffer = ArrayBuffer;
-  </script>
+
+  <script>/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', './assets/particles.json', function () {
+      console.log('callback - particles.js config loaded');
+    });</script>
 </body>
 
 </html>
