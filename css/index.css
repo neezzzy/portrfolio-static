@@ -211,7 +211,7 @@ panel {
 .scrollDownText {
   position: absolute;
   text-align: center;
-  margin-top: calc(85vh);
+  margin-top: calc(80vh);
   font-size: 2rem;
   z-index: 5;
   animation: fade-in-down 2s ease-in-out infinite;
@@ -523,5 +523,9 @@ footer {
     opacity: 100;
     visibility: visible;
     will-change: transform, opacity;
+  }
+
+  .scrollDownText { 
+    margin-top: calc(65vh);
   }
 }
