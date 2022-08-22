@@ -46,6 +46,7 @@ Without these wonderful instructors and their courses, this would not be possibl
 * [CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0)
 * [Mehran Sahami](https://www.youtube.com/watch?v=KkMDCCdjyW8)
 * [Part Time Larry](https://www.youtube.com/c/parttimelarry)
+* [Seb-GRAF](https://github.com/Seb-GRAF)
 * and many many more...
 
 <p align="right">(<a href="#top">back to top</a>)</p>
