@@ -5,7 +5,7 @@
   --primary-add1-color: hsl(187, 85%, 19%);
   --secondary-add2-color: hsl(178, 96%, 87%);
   --white: #ffffffe7;
-  --off-white: hsla(0, 0%, 100%, 0.457);
+  --off-white: hsla(0, 0%, 100%, 0.89);
   --gray: #808080;
   --black: hsl(0, 0%, 16%);
   --color-link: hsl(240, 100%, 82%);
@@ -16,6 +16,7 @@
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts/ubuntu-v20-latin-regular.eot"); /* IE9 Compat Modes */
 }
 
@@ -24,6 +25,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts/open-sans-v34-latin-regular.eot"); /* IE9 Compat Modes */
 }
 
@@ -42,7 +44,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  font-family: "Lora", serif;
+  font-family: "Open Sans";
   position: relative;
 }
 
@@ -114,7 +116,7 @@ b {
   object-fit: cover;
   filter: drop-shadow(0 0 5px hsl(0, 0%, 50%));
   border: 15px solid white;
-  border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><defs><linearGradient id='redgradient'><stop offset='0' stop-color='%23FFC14D'/><stop offset='0.362' stop-color='%23FF4834'/><stop offset='1' stop-color='%233B0300'/></linearGradient></defs><g id='Layer_1'><path d='M0,0 L50,0 L50,50 L0,50 L0,0 z' fill='url(%23redgradient)' width='100%' height='100%'/></g></svg>")
+  border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><defs><linearGradient id='redgradient'><stop offset='0' stop-color='%808080'/><stop offset='0.362' stop-color='%ffffffe7'/><stop offset='1' stop-color='%233B0310'/></linearGradient></defs><g id='Layer_1'><path d='M0,0 L50,0 L50,50 L0,50 L0,0 z' fill='url(%23redgradient)' width='100%' height='100%'/></g></svg>")
     10% stretch;
 }
 
@@ -211,8 +213,12 @@ panel {
   text-align: center;
   margin-top: calc(90vh);
   font-size: 2rem;
-  z-index: -11;
+  z-index: 5;
   animation: fade-in-down 2s ease-in-out infinite;
+}
+
+.scrollDownText {
+  cursor: pointer;
 }
 
 @keyframes fade-in-down {
@@ -304,7 +310,7 @@ panel {
   padding: 2rem;
   font-weight: 400;
   background-color: var(--black);
-  color: #ffffff;
+  color: var(--off-white);
   z-index: 1;
 }
 
@@ -348,8 +354,11 @@ footer {
 }
 
 .footer-section {
-  background-color: var(--primary-bg-color);
-  font-family: "Lora", serif;
+  background-color: var(--black);
+}
+
+.footer-title {
+  color: var(--off-white);
 }
 
 .fab {
@@ -385,6 +394,21 @@ footer {
 }
 /* 768-480     - tablet  */
 @media all and (min-width: 480px) and (max-width: 760px) {
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  .description-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-wrapper {
+    padding-top: 0;
+  }
+
   .projects-wrapper {
     display: flex;
     flex-direction: column;
@@ -424,6 +448,9 @@ footer {
     height: auto;
   }
 
+  .project-description btn {
+  }
+
   .card {
     border-radius: 0;
   }
@@ -450,7 +477,13 @@ footer {
   h1,
   h2,
   h3 {
+    text-transform: uppercase;
+    padding: 7%;
     text-align: center;
+  }
+
+  footer h2 {
+    text-transform: capitalize;
   }
 
   .project-container {
@@ -460,9 +493,19 @@ footer {
   }
 
   .project-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
+  }
+
+  .visit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .card {
