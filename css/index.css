@@ -1,14 +1,21 @@
 /* GLOBAL STYLES */
 :root {
-  --primary-bg-color: hsl(241, 100%, 30%);
-  --secondary-bg-color: hsl(213, 81%, 50%);
-  --primary-add1-color: hsl(187, 85%, 19%);
-  --secondary-add2-color: hsl(178, 96%, 87%);
-  --white: #ffffffe7;
-  --off-white: hsla(0, 0%, 100%, 0.89);
-  --gray: #808080;
-  --black: hsl(0, 0%, 16%);
-  --color-link: hsl(240, 100%, 82%);
+  --primary-color: #030099;
+  --white: #ffffff;
+  --off-white: #ffffffe3;
+  --gray: #696969;
+  --black: #292929;
+  --color-link: #a3a3ff;
+  --surface-color: #292929;
+  /* --card-title: #f97068; */
+  --card-title: #f96f68d8;
+  --card-tech: #e3e3e3;
+  --card-description: #c6c6c6d3;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* ubuntu-regular - latin */
@@ -64,7 +71,7 @@ h1 {
 
 h2 {
   font-family: "Open Sans", sans-serif;
-  color: var(--primary-bg-color);
+  color: var(--primary-color);
 }
 
 p {
@@ -252,6 +259,7 @@ panel {
   align-items: stretch;
   text-align: left;
 }
+
 .thin_border {
   border-left: 1px solid hsl(0, 0%, 89%);
   background-color: hsl(0, 0%, 50%);
@@ -352,28 +360,124 @@ footer {
   width: 100%;
   color: var(--off-white);
 }
-
 .footer-section {
   background-color: var(--black);
 }
-
 .footer-title {
   color: var(--off-white);
 }
-
 .fab {
   -webkit-font-smoothing: antialiased;
 }
-
 .far {
   -webkit-font-smoothing: antialiased;
 }
 
-.btn-outline-light:hover,
-.btn-outline-light:focus,
-.btn-outline-light:active {
-  background-color: var(--primary-add1-color);
-  border-color: var(--white);
+/* Project Cards */
+/* smaller devices */
+.cards-md-screen {
+  display: none;
+}
+
+.card-tablet {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.card__image {
+  width: 100%;
+  height: 22rem;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+  transform: translateY(100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card-tablet:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 20;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card-tablet:hover .card__header {
+  transform: translateY(0);
+}
+
+.card-title {
+  color: var(--card-title);
+}
+
+.card-text {
+  color: var(--card-tech);
+}
+
+.visit-btn .btn {
+  background-color: #b56576;
+}
+
+.visit-btn .btn:hover {
+  background-color: #b5657683;
+}
+
+.btn {
+  width: 100%;
+}
+
+.card__title {
+  text-align: left;
+  margin: 0 0 0.3em;
+  color: var(--card-title);
+}
+
+.card__status {
+  color: var(--card-tech);
+}
+
+.card__description {
+  padding: 0 2em 3em;
+  margin: 0;
+  color: var(--card-description);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 /* 1280-1024   - desktop (default grid) */
@@ -381,12 +485,13 @@ footer {
   body {
     overflow: hidden;
   }
+
   .card {
     height: 25rem;
   }
 
   [class^="project-image"] {
-    border-radius: 1%;
+    border-radius: calc(var(--curve) * 1px);
   }
 }
 /* 1024-768    - tablet landscape */
@@ -398,6 +503,14 @@ footer {
   h2,
   h3 {
     text-align: center;
+  }
+
+  .cards-lg-screen {
+    display: none;
+  }
+
+  .cards-md-screen {
+    display: block;
   }
 
   .description-text {
@@ -448,11 +561,8 @@ footer {
     height: auto;
   }
 
-  .project-description btn {
-  }
-
   .card {
-    border-radius: 0;
+    border-radius: calc(var(--curve) * 1px);
   }
 
   .gs_reveal {
@@ -463,33 +573,35 @@ footer {
 }
 /* 480-less    - phone landscape & smaller */
 @media all and (max-width: 480px) {
-  .emojy {
-    display: none;
-  }
-
   .main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
 
   h1,
-  h2,
-  h3 {
+  h2 {
     text-transform: uppercase;
     padding: 7%;
     text-align: center;
   }
 
   footer h2 {
-    text-transform: lowercase;
+    text-transform: none;
+  }
+
+  .cards-lg-screen {
+    display: none;
+  }
+
+  .cards-md-screen {
+    display: block;
   }
 
   .project-container {
     width: 100%;
-    padding: 0;
-    margin: 0;
   }
 
   .project-description {
@@ -502,30 +614,7 @@ footer {
     padding: 0;
   }
 
-  .visit-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .card {
-    display: flex;
-    padding-bottom: 1rem;
-    height: 25rem;
-    margin-bottom: 10px;
-  }
-
-  [class^="project-image"] {
-    display: none;
-  }
-
-  .gs_reveal {
-    opacity: 100;
-    visibility: visible;
-    will-change: transform, opacity;
-  }
-
-  .scrollDownText { 
+  .scrollDownText {
     margin-top: calc(65vh);
   }
 }
