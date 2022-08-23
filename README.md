@@ -27,9 +27,11 @@ Here's why I created it:
 
 <!-- ROADMAP -->
 ## Roadmap
-- [ ] Add new projects
-- [ ] Improve performance 
-- [ ] Update links
+- [ ] Add Dark Theme
+- [X] Add new projects
+- [X] Improve performance 
+- [X] Update links
+- [X] Update UI
 
 <!-- CONTACT -->
 ## Contact
