@@ -34,7 +34,6 @@
   <main class="main">
     <!-- ***********************  HERO  *********************** -->
     <header class="panel">
-
       <section class="hero">
         <div id="particles-js"></div>
         <div class="hero-main">
@@ -70,9 +69,9 @@
             </span>
           </h1>
           <div class="d-flex justify-content-between-md gap-5">
-            <a aria-label="Visit Ruslan Nizamov's LinkedIn" class="btn btn-outline-dark btn-lg-md"
+            <a aria-label="Visit Ruslan Nizamov's LinkedIn" class="btn btn-outline-dark btn-lg-md" target="_blank"
               href="https://www.linkedin.com/in/nizamovruslan/">LinkedIn</a>
-            <a aria-label="Visit Ruslan Nizamov's github" class="btn btn-outline-dark btn-lg-md"
+            <a aria-label="Visit Ruslan Nizamov's github" class="btn btn-outline-dark btn-lg-md" target="_blank"
               href="https://github.com/neezzzy">GitHub</a>
           </div>
         </div>
@@ -99,9 +98,9 @@
             Development certificate program to be a professional software and web developer.</p>
           <p>In the past few years, I have learned and used React, JavaScript, Python, and Bootstrap to build the
             front-end. I also learned how to use Node and Express to implement the back-end.</p>
-          <p>I have over 50 different certificates of completion from <a aria-label="Visit LinkedIn Learning website"
+          <p>I have over 50 different certificates of completion from <a aria-label="Visit LinkedIn Learning website" target="_blank"
               href="https://www.linkedin.com/learning/"><b>LinkedIn
-                Learning</b></a>, <a aria-label="Visit Udemy" href="https://www.udemy.com/"><b>Udemy</b></a>, and <a
+                Learning</b></a>, <a aria-label="Visit Udemy" href="https://www.udemy.com/"><b>Udemy</b></a>, and <a target="_blank"
               aria-label="Visit Coursera" href="https://www.coursera.org/"><b>Coursera</b></a>, and I continually
             add new knowledge about new tech.</p>
           <p>My current tech stack is below.</p>
@@ -159,193 +158,297 @@
               on.
             </p>
           </div>
-
-          <!-- FLASHCARDS PROJECT -->
-          <div class="project-container gs_reveal">
-            <div class="gs_reveal_fromRight">
-              <div class="hvr-grow">
-                <a aria-label="Visit Ruslan Nizamov's FlashCards app on Google Play Store" target="_blank"
-                  href="https://play.google.com/store/apps/details?id=com.flashcanada.flashcardcanada">
-                  <img class="project-image project-image-scroll " src="images/yotta-prep.webp"
-                    alt="Yotta-Prep FlashCards app screenshot" />
-                </a>
-              </div>
-            </div>
-            <div class="project-description gs_reveal card">
-              <div class="card-body">
-                <h3 class="card-title">Flashcard App</h3>
-                <p class="card-text">100+ questions and answers.</p>
-                <p class="card-text">Flashcards cover everything needed to pass the Canadian Citizenship test.</p>
-                <hr class="thin_border" />
-                <p class="card-text"><i>Built using React Native, Bootstrap and Expo.</i></p>
-                <div class="visit-btn">
-                  <a class="btn btn-secondary btn-lg btn-block"
-                    href="https://play.google.com/store/apps/details?id=com.flashcanada.flashcardcanada"
-                    target="_blank">
-                    <div class="link-wrapper">
-                      <span class="link">Visit GooglePlay Store</span>
+          <ul class="cards-md-screen">
+            <li>
+              <a class="card-tablet" aria-label="Visit Russell Nizamov's FlashCards app on Google Play Store"
+                target="_blank" href="https://play.google.com/store/apps/details?id=com.flashcanada.flashcardcanada">
+                <img src="./images/yotta-prep.webp" class="card__image" alt="" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                      <path />
+                    </svg>
+                    <div class="card__header-text">
+                      <h3 class="card__title">FlashCards App</h3>
+                      <span class="card__status">React Native, Expo, Bootstrap</span>
                     </div>
+                  </div>
+                  <p class="card__description">App with 100+ questions and answers.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="card-tablet" aria-label="Visit Chat App GitHub Page" target="_blank"
+                href="https://github.com/neezzzy/chatter">
+                <img src="images/midnight-chatter.webp" class="card__image" alt="chat app screenshot" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                      <path />
+                    </svg>
+                    <div class="card__header-text">
+                      <h3 class="card__title">Chatter App</h3>
+                      <span class="card__status">Socket IO, Express</span>
+                    </div>
+                  </div>
+                  <p class="card__description">Join the chat and send messages in real time.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="card-tablet" aria-label="Visit My Foodie Github Page" target="_blank"
+                href="https://github.com/neezzzy/MyFoodie-Restaurant">
+                <img src="./images/my-foodie.webp" class="card__image" alt="My Foodie screenshot" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                      <path />
+                    </svg>
+                    <div class="card__header-text">
+                      <h3 class="card__title">My Foodie Restaurant</h3>
+                      <span class="card__status">CSS, Bootstrap, jQuery</span>
+                    </div>
+                  </div>
+                  <p class="card__description">Sample template
+                    for an imaginary restaurant.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="card-tablet" aria-label="Visit Crypto Dashboard Github Page" target="_blank"
+                href="https://github.com/neezzzy/crypto-board">
+                <img src="./images/crypto-dashboard.webp" class="card__image" alt="Crypto Dashboard screenshot" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                      <path />
+                    </svg>
+                    <div class="card__header-text">
+                      <h3 class="card__title">Crypto Dashboard</h3>
+                      <span class="card__status">React, CoinGecko API, Bootstrap, ApexCharts</span>
+                    </div>
+                  </div>
+                  <p class="card__description">Dashboard for cryptocurrencies and real time financial
+                    charts.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="card-tablet" aria-label="Visit Indegestibles Blog" target="_blank"
+                href="https://indigestible-blog-app.herokuapp.com/">
+                <img src="./images/indigest.webp" class="card__image" alt="Indegestibles Blog screenshot" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                      <path />
+                    </svg>
+                    <div class="card__header-text">
+                      <h3 class="card__title">Indegestibles Blog</h3>
+                      <span class="card__status">Flask, Python</span>
+                    </div>
+                  </div>
+                  <p class="card__description">Personal Blog hosted on Heroku.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="card-tablet" aria-label="Visit E-commerce Website" target="_blank"
+                href="https://github.com/neezzzy/react-ts-online-store">
+                <img src="./images/e-commerce.webp" class="card__image" alt="E-commerce Website screenshot" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                      <path />
+                    </svg>
+                    <div class="card__header-text">
+                      <h3 class="card__title">E-commerce Website</h3>
+                      <span class="card__status">TypeScript, React</span>
+                    </div>
+                  </div>
+                  <p class="card__description">Advanced Cart functionality combined with React Context Api.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="cards-lg-screen">
+            <!-- FLASHCARDS PROJECT -->
+            <div class="project-container gs_reveal">
+              <div class="gs_reveal_fromRight">
+                <div class="hvr-grow">
+                  <a class="" aria-label="Visit Ruslan Nizamov's FlashCards app on Google Play Store" target="_blank"
+                    href="https://play.google.com/store/apps/details?id=com.flashcanada.flashcardcanada">
+                    <img class="project-image project-image-scroll" src="images/yotta-prep.webp"
+                      alt="Yotta-Prep FlashCards app screenshot" />
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- FLASHCARDS END -->
-
-          <!-- CHAT PROJECT -->
-          <div class="project-container gs_reveal">
-            <div class="gs_reveal_fromLeft">
-              <div class="hvr-grow">
-                <a target="_blank" href="https://github.com/neezzzy/chatter target=">
-                  <img class="project-image-left project-image-scroll" src="images/midnight-chatter.webp"
-                    alt="Chatter App app screenshot" />
-                </a>
-              </div>
-
-            </div>
-            <div class="project-description gs_reveal card">
-              <div class="card-body">
-                <h3 class="card-title">Chatter App</h3>
-                <p class="card-text">Allows multiple users to join the chat and send messages in real time.</p>
-                <hr class="thin_border" />
-                <p class="card-text"><i>Built using Socket IO, Express.</i></p>
-                <div class="visit-btn">
-                  <a class="btn btn-secondary btn-lg btn-block" href="https://github.com/neezzzy/chatter">
-                    <div class="link-wrapper">
-                      <span class="link">Visit GitHub Page</span>
-                    </div>
-                  </a>
+              <div class="project-description gs_reveal card">
+                <div class="card-body">
+                  <h3 class="card-title">Flashcard App</h3>
+                  <p class="card-text">100+ questions and answers.</p>
+                  <p class="card-text">Flashcards cover everything needed to pass the Canadian Citizenship test.</p>
+                  <hr class="thin_border" />
+                  <p class="card-text"><i>Built using React Native, Bootstrap and Expo.</i></p>
+                  <div class="visit-btn">
+                    <a class="btn btn-secondary btn-lg btn-block"
+                      href="https://play.google.com/store/apps/details?id=com.flashcanada.flashcardcanada"
+                      target="_blank">
+                      <div class="link-wrapper">
+                        <span class="link">Visit GooglePlay Store</span>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- CHAT PROJECT END-->
-
-          <!-- MyFoodie PROJECT -->
-          <div class="project-container gs_reveal">
-            <div class="gs_reveal_fromRight">
-              <div class="hvr-grow">
-                <a href="https://github.com/neezzzy/MyFoodie-Restaurant" target="_blank"> <img
-                    class="project-image project-image-scroll " src="./images/my-foodie.webp"
-                    alt="MyFoodie app screenshot" />
-              </div></a>
-            </div>
-            <div class="project-description gs_reveal card">
-              <div class="card-body">
-                <h3 class="card-title">My Foodie Restaurant</h3>
-                <p class="card-text">This project was made to prepare for an interview. I've built a sample template
-                  for an imaginary restaurant.</p>
-                <hr class="thin_border" />
-                <p class="card-text"><i>Built using CSS, Bootstrap, jQuery.</i></p>
-                <div class="visit-btn">
-                  <a class="btn btn-secondary btn-lg btn-block" href="https://github.com/neezzzy/MyFoodie-Restaurant"
-                    target="_blank">
-                    <div class="link-wrapper">
-                      <span class="link">Visit GitHub
-                        Page</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- MyFoodie END -->
-
-
-          <!-- crypto dashboard project -->
-          <div class="project-container gs_reveal">
-            <div class="gs_reveal_fromLeft">
-              <div class="hvr-grow">
-                <a href="https://github.com/neezzzy/crypto-board" target="_blank">
-                  <img class="project-image-left  project-image-scroll " src="./images/crypto-dashboard.webp"
-                    alt="Crypto Dashboard app screenshot" />
-                </a>
-              </div>
-            </div>
-            <div class="project-description gs_reveal card">
-              <div class="card-body">
-                <h3 class="card-title">Crypto Dashboard</h3>
-                <p class="card-text">I've created this project to learn more about cryptocurrencies and financial
-                  charts.</p>
-                <hr class="thin_border" />
-                <p class="card-text"><i>Built with React, CoinGecko API, Bootstrap, ApexCharts.</i></p>
-                <div class="visit-btn">
-                  <a class="btn btn-secondary btn-lg btn-block" href="https://github.com/neezzzy/crypto-board"
-                    target="_blank">
-                    <div class="link-wrapper">
-                      <span class="link">Visit GitHub
-                        Page</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- dashboard END -->
-
-          <!-- Web Blog PROJECT -->
-          <div class="project-container gs_reveal">
-            <div class="gs_reveal_fromRight">
-              <div class="hvr-grow">
-                <a href="https://indigestible-blog-app.herokuapp.com/" target="_blank">
-                  <img class="project-image project-image-scroll " src="./images/indigest.webp"
-                    alt="Web Blog app screenshot" />
-                </a>
-              </div>
-            </div>
-            <div class="project-description gs_reveal card">
-              <div class="card-body">
-                <h3 class="card-title">Indegestibles Blog</h3>
-                <p class="card-text"></p>
-                <p class="card-text">Personal Blog hosted on Heroku.</p>
-                <hr class="thin_border" />
-                <p class="card-text"><i>Built with Flask, Python.</i></p>
-                <div class="visit-btn">
-                  <a class="btn btn-secondary btn-lg btn-block" href="https://indigestible-blog-app.herokuapp.com/"
-                    target="_blank">
-                    <div class="link-wrapper">
-                      <span class="link">Visit Blog</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Web Blog END -->
-
-          <!-- Shopping Cart project -->
-          <div class="project-container gs_reveal">
-            <div class="gs_reveal_fromLeft">
-              <div class="hvr-grow">
-                <a href="https://github.com/neezzzy/react-ts-online-store" target="_blank">
-                  <img class="project-image-left project-image-scroll " src="./images/e-commerce.webp"
-                    alt="Shopping Cart app screenshot" />
-                </a>
-              </div>
-            </div>
-            <div class="project-description gs_reveal card">
-              <div class="card-body">
-                <h3 class="card-title">E-commerce Website</h3>
-                <p class="card-text">Advanced Cart Functionality combined with React Context Api allows seamless state
-                  sharing across components.</p>
-                <hr class="thin_border" />
-                <p class="card-text"><i>Built with TypeScript, React.</i></p>
-                <div class="visit-btn">
-                  <a class="btn btn-secondary btn-lg btn-block" href="https://github.com/neezzzy/react-ts-online-store"
-                    target="_blank">
-                    <div class="link-wrapper">
-                      <span class="link">Visit GitHub
-                        Page</span>
-                    </div>
+            <!-- FLASHCARDS END -->
+            <!-- CHAT PROJECT -->
+            <div class="project-container gs_reveal">
+              <div class="gs_reveal_fromLeft">
+                <div class="hvr-grow">
+                  <a target="_blank" href="https://github.com/neezzzy/chatter">
+                    <img class="project-image-left project-image-scroll" src="images/midnight-chatter.webp"
+                      alt="Chatter App app screenshot" />
                   </a>
                 </div>
 
               </div>
+              <div class="project-description gs_reveal card">
+                <div class="card-body">
+                  <h3 class="card-title">Chatter App</h3>
+                  <p class="card-text">Allows multiple users to join the chat and send messages in real time.</p>
+                  <hr class="thin_border" />
+                  <p class="card-text"><i>Built using Socket IO, Express.</i></p>
+                  <div class="visit-btn">
+                    <a class="btn btn-secondary btn-lg btn-block" href="https://github.com/neezzzy/chatter" target="_blank">
+                      <div class="link-wrapper">
+                        <span class="link">Visit GitHub Page</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- CHAT PROJECT END-->
+            <!-- MyFoodie PROJECT -->
+            <div class="project-container gs_reveal">
+              <div class="gs_reveal_fromRight">
+                <div class="hvr-grow">
+                  <a href="https://github.com/neezzzy/MyFoodie-Restaurant" target="_blank"> <img
+                      class="project-image project-image-scroll " src="./images/my-foodie.webp"
+                      alt="MyFoodie app screenshot" />
+                </div></a>
+              </div>
+              <div class="project-description gs_reveal card">
+                <div class="card-body">
+                  <h3 class="card-title">My Foodie Restaurant</h3>
+                  <p class="card-text">This project was made to prepare for an interview. I've built a sample template
+                    for an imaginary restaurant.</p>
+                  <hr class="thin_border" />
+                  <p class="card-text"><i>Built using CSS, Bootstrap, jQuery.</i></p>
+                  <div class="visit-btn">
+                    <a class="btn btn-secondary btn-lg btn-block" href="https://github.com/neezzzy/MyFoodie-Restaurant"
+                      target="_blank">
+                      <div class="link-wrapper">
+                        <span class="link">Visit GitHub
+                          Page</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- MyFoodie END -->
+            <!-- crypto dashboard project -->
+            <div class="project-container gs_reveal">
+              <div class="gs_reveal_fromLeft">
+                <div class="hvr-grow">
+                  <a href="https://github.com/neezzzy/crypto-board" target="_blank">
+                    <img class="project-image-left  project-image-scroll " src="./images/crypto-dashboard.webp"
+                      alt="Crypto Dashboard app screenshot" />
+                  </a>
+                </div>
+              </div>
+              <div class="project-description gs_reveal card">
+                <div class="card-body">
+                  <h3 class="card-title">Crypto Dashboard</h3>
+                  <p class="card-text">I've created this project to learn more about cryptocurrencies and financial
+                    charts.</p>
+                  <hr class="thin_border" />
+                  <p class="card-text"><i>Built with React, CoinGecko API, Bootstrap, ApexCharts.</i></p>
+                  <div class="visit-btn">
+                    <a class="btn btn-secondary btn-lg btn-block" href="https://github.com/neezzzy/crypto-board"
+                      target="_blank">
+                      <div class="link-wrapper">
+                        <span class="link">Visit GitHub
+                          Page</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- dashboard END -->
+            <!-- Web Blog PROJECT -->
+            <div class="project-container gs_reveal">
+              <div class="gs_reveal_fromRight">
+                <div class="hvr-grow">
+                  <a href="https://indigestible-blog-app.herokuapp.com/" target="_blank">
+                    <img class="project-image project-image-scroll" src="./images/indigest.webp"
+                      alt="Web Blog app screenshot" />
+                  </a>
+                </div>
+              </div>
+              <div class="project-description gs_reveal card">
+                <div class="card-body">
+                  <h3 class="card-title">Indegestibles Blog</h3>
+                  <p class="card-text"></p>
+                  <p class="card-text">Personal Blog hosted on Heroku.</p>
+                  <hr class="thin_border" />
+                  <p class="card-text"><i>Built with Flask, Python.</i></p>
+                  <div class="visit-btn">
+                    <a class="btn btn-secondary btn-lg btn-block" href="https://indigestible-blog-app.herokuapp.com/"
+                      target="_blank">
+                      <div class="link-wrapper">
+                        <span class="link">Visit Blog</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Web Blog END -->
+            <!-- Shopping Cart project -->
+            <div class="project-container gs_reveal">
+              <div class="gs_reveal_fromLeft">
+                <div class="hvr-grow">
+                  <a href="https://github.com/neezzzy/react-ts-online-store" target="_blank">
+                    <img class="project-image-left project-image-scroll " src="./images/e-commerce.webp"
+                      alt="Shopping Cart app screenshot" />
+                  </a>
+                </div>
+              </div>
+              <div class="project-description gs_reveal card">
+                <div class="card-body">
+                  <h3 class="card-title">E-commerce Website</h3>
+                  <p class="card-text">Advanced Cart functionality combined with React Context Api allows seamless state
+                    sharing across components.</p>
+                  <hr class="thin_border" />
+                  <p class="card-text"><i>Built with TypeScript, React.</i></p>
+                  <div class="visit-btn">
+                    <a class="btn btn-secondary btn-lg btn-block"
+                      href="https://github.com/neezzzy/react-ts-online-store" target="_blank">
+                      <div class="link-wrapper">
+                        <span class="link">Visit GitHub
+                          Page</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Shopping Cart END -->
           </div>
-
-          <!-- Shopping Cart END -->
-
 
     </section>
 
@@ -357,16 +460,16 @@
         <h2 class="footer-title text-center">You can also find me here</h2>
         <div class="col-md-5 d-flex flex-row justify-content-center">
           <!-- github -->
-          <a class="btn" href="https://neezzzy.github.io/" aria-label="Visit Ruslan Nizamov's github" role="button">
+          <a class="btn" href="https://neezzzy.github.io/" aria-label="Visit Ruslan Nizamov's github" role="button" target="_blank">
             <img src="icons/github.svg" class="social-icon" alt="Visit Ruslan Nizamov's twitter" />
           </a>
           <!-- email -->
-          <a class="btn" href="yottabitesapps@gmail.com/" aria-label="Visit Ruslan Nizamov's email" role="button">
+          <a class="btn" href="yottabitesapps@gmail.com/" aria-label="Visit Ruslan Nizamov's email" role="button" target="_blank">
             <img src="icons/email.svg" class="social-icon" alt="Send an email" />
           </a>
           <!-- linkedin -->
           <a class="btn" href="https://www.linkedin.com/in/nizamovruslan/" aria-label="Visit Ruslan Nizamov's LinkedIn"
-            role="button">
+            role="button" target="_blank">
             <img src="icons/linkedin.svg" class="social-icon" alt="Visit Ruslan Nizamov's linkedin" />
           </a>
         </div>
