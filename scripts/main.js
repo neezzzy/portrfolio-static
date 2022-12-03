@@ -1,5 +1,6 @@
 const date = new Date().getFullYear();
 document.getElementById("year").innerHTML = date;
+// you can delete everything below this and remove comment in index.html
 gsap.registerPlugin(ScrollTrigger);
 
 function animateFrom(elem, direction) {
