@@ -32,14 +32,42 @@
 
 <body>
   <main class="main">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Digital Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item" id="theme_toggler">
+              <div class="theme">
+                <button onclick="theme()"></button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <!-- ***********************  HERO  *********************** -->
     <header class="panel">
-      <section class="hero container">
+      <section class="hero">
         <div id="particles-js"></div>
         <div class="hero-main">
           <h1 class="hero-title">
             <span class=" title-wrapper">
-
               <span class="title">
                 <div>
                   Russell
@@ -87,17 +115,17 @@
 
     <!-- ***********************  ABOUT  *********************** -->
     <section id="about" class="panel container">
-      <hr class="thin_border" />
+      <hr class="thin-border" />
       <div class="about-wrapper">
         <h2>About me</h2>
         <div class="about-text">
           <p>Since I discovered programming six years ago, I have loved creating websites, making computer games and
             coding solutions to solve real-world problems. I never thought that I might want to pursue it as a career in
             future.</p>
-          <p>I graduated with a Master's Degree in Education. Currently, I am enrolled in the Advanced Software
-            Development certificate program to be a professional software and web developer.</p>
+          <p>I graduated with a Master's Degree in Education. I've completed the Advanced Software
+            Development certificate program.</p>
           <p>In the past few years, I have learned and used React, JavaScript, Python, and Bootstrap to build the
-            front-end. I also learned how to use Node and Express to implement the back-end.</p>
+            front-end. I also learned how to use Node, PHP, Flask to implement the back-end.</p>
           <p>I have over 50 different certificates of completion from <a aria-label="Visit LinkedIn Learning website"
               target="_blank" href="https://www.linkedin.com/learning/"><b>LinkedIn
                 Learning</b></a>, <a aria-label="Visit Udemy" href="https://www.udemy.com/"><b>Udemy</b></a>, and <a
@@ -108,31 +136,37 @@
         </div>
         <div class="slide-container">
           <div class="row">
-            <div class="cycle-slideshow" data-cycle-fx=carousel data-cycle-timeout=1000 data-cycle-carousel-visible=6
+            <div class="cycle-slideshow" data-cycle-fx=carousel data-cycle-timeout=1000 data-cycle-carousel-visible=3
               data-cycle-carousel-fluid=true data-cycle-slides="div">
-              <div class="col-xs-2">
+              <div class="col-xs-2 p-4">
                 <img src="./icons/js.svg" alt="icon javascript">
               </div>
-              <div class="col-xs-2">
+              <div class="col-xs-2 p-4">
                 <img src="./icons/css.svg" alt="icon css">
               </div>
-              <div class="col-xs-2">
+              <div class="col-xs-2 p-4">
                 <img src="./icons/java.svg" alt="icon java">
               </div>
-              <div class="col-xs-2">
+              <div class="col-xs-2 p-4">
                 <img src="./icons/python.svg" alt="icon python">
               </div>
-              <div class="col-xs-2">
+              <div class="col-xs-2 p-4">
                 <img src="./icons/react-native.svg" alt="icon react">
               </div>
-              <div class="col-xs-2">
+              <div class="col-xs-2 p-4">
                 <img src="./icons/node-js.svg" alt="icon node">
               </div>
-              <div class="col-xs-2">
+              <div class="col-xs-2 p-4">
                 <img src="./icons/mongodb.svg" alt="icon mongodb">
               </div>
-              <div class="col-xs-2">
+              <div class="col-xs-2 p-4">
                 <img src="./icons/mysql-logo.svg" alt="icon mysql">
+              </div>
+              <div class="col-xs-2 p-4">
+                <img src="./icons/php-logo.svg" alt="icon php">
+              </div>
+              <div class="col-xs-2 p-4">
+                <img src="./icons/laravel.svg" alt="icon laravel">
               </div>
             </div>
           </div>
@@ -143,7 +177,7 @@
 
     <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
     <section class="panel container" id="projects">
-      <hr class="thin_border" />
+      <hr class="thin-border" />
       <div class="about-wrapper">
         <h2>Projects</h1>
           <div>
@@ -151,58 +185,59 @@
               on.
             </p>
           </div>
-          <ul class="cards-md-screen">
+          <!-- PROJECT md SCREEN -->
+          <ul class="cards-md-screen ">
             <li>
-              <a class="card-tablet" aria-label="Visit Russell Nizamov's FlashCards app on Google Play Store"
+              <a class="card-tablet " aria-label="Visit Russell Nizamov's FlashCards app on Google Play Store"
                 target="_blank" href="https://play.google.com/store/apps/details?id=com.flashcanada.flashcardcanada">
-                <img src="./images/yotta-prep.webp" class="card__image" alt="" />
-                <div class="card__overlay">
-                  <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                <img src="./images/yotta-prep.webp" class="card-image" alt="" />
+                <div class="card-overlay ">
+                  <div class="card-header">
+                    <svg class="card-arc" xmlns="http://www.w3.org/2000/svg">
                       <path />
                     </svg>
-                    <div class="card__header-text">
-                      <h3 class="card__title">FlashCards App</h3>
-                      <span class="card__status">React Native, Expo, Bootstrap</span>
+                    <div>
+                      <h3 class="card-title">FlashCards App</h3>
+                      <span class="card-status">React Native, Expo, Bootstrap</span>
                     </div>
                   </div>
-                  <p class="card__description">App with 100+ questions and answers.</p>
+                  <p class="card-description">App with 100+ questions and answers.</p>
                 </div>
               </a>
             </li>
             <li>
               <a class="card-tablet" aria-label="Visit Chat App GitHub Page" target="_blank"
                 href="https://github.com/neezzzy/chatter">
-                <img src="images/midnight-chatter.webp" class="card__image" alt="chat app screenshot" />
-                <div class="card__overlay">
-                  <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                <img src="images/midnight-chatter.webp" class="card-image" alt="chat app screenshot" />
+                <div class="card-overlay">
+                  <div class="card-header">
+                    <svg class="card-arc" xmlns="http://www.w3.org/2000/svg">
                       <path />
                     </svg>
-                    <div class="card__header-text">
-                      <h3 class="card__title">Chatter App</h3>
-                      <span class="card__status">Socket IO, Express</span>
+                    <div class="card-header-text">
+                      <h3 class="card-title">Chatter App</h3>
+                      <span class="card-status">Socket IO, Express</span>
                     </div>
                   </div>
-                  <p class="card__description">Join the chat and send messages in real time.</p>
+                  <p class="card-description">Join the chat and send messages in real time.</p>
                 </div>
               </a>
             </li>
             <li>
               <a class="card-tablet" aria-label="Visit My Foodie Github Page" target="_blank"
                 href="https://github.com/neezzzy/MyFoodie-Restaurant">
-                <img src="./images/my-foodie.webp" class="card__image" alt="My Foodie screenshot" />
-                <div class="card__overlay">
-                  <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                <img src="./images/my-foodie.webp" class="card-image" alt="My Foodie screenshot" />
+                <div class="card-overlay">
+                  <div class="card-header">
+                    <svg class="card-arc" xmlns="http://www.w3.org/2000/svg">
                       <path />
                     </svg>
-                    <div class="card__header-text">
-                      <h3 class="card__title">My Foodie Restaurant</h3>
-                      <span class="card__status">CSS, Bootstrap, jQuery</span>
+                    <div class="card-header-text">
+                      <h3 class="card-title">My Foodie Restaurant</h3>
+                      <span class="card-status">CSS, Bootstrap, jQuery</span>
                     </div>
                   </div>
-                  <p class="card__description">Sample template
+                  <p class="card-description">Sample template
                     for an imaginary restaurant.</p>
                 </div>
               </a>
@@ -210,61 +245,61 @@
             <li>
               <a class="card-tablet" aria-label="Visit Crypto Dashboard Github Page" target="_blank"
                 href="https://github.com/neezzzy/crypto-board">
-                <img src="./images/crypto-dashboard.webp" class="card__image" alt="Crypto Dashboard screenshot" />
-                <div class="card__overlay">
-                  <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                <img src="./images/crypto-dashboard.webp" class="card-image" alt="Crypto Dashboard screenshot" />
+                <div class="card-overlay">
+                  <div class="card-header">
+                    <svg class="card-arc" xmlns="http://www.w3.org/2000/svg">
                       <path />
                     </svg>
-                    <div class="card__header-text">
-                      <h3 class="card__title">Crypto Dashboard</h3>
-                      <span class="card__status">React, CoinGecko API, Bootstrap, ApexCharts</span>
+                    <div class="card-header-text">
+                      <h3 class="card-title">Crypto Dashboard</h3>
+                      <span class="card-status">React, ApexCharts</span>
                     </div>
                   </div>
-                  <p class="card__description">Dashboard for cryptocurrencies and real time financial
-                    charts.</p>
+                  <p class="card-description">Dashboard with real time charts.</p>
                 </div>
               </a>
             </li>
             <li>
               <a class="card-tablet" aria-label="Visit Indegestibles Blog" target="_blank"
                 href="https://indigestible-blog-app.herokuapp.com/">
-                <img src="./images/indigest.webp" class="card__image" alt="Indegestibles Blog screenshot" />
-                <div class="card__overlay">
-                  <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                <img src="./images/indigest.webp" class="card-image" alt="Indegestibles Blog screenshot" />
+                <div class="card-overlay">
+                  <div class="card-header">
+                    <svg class="card-arc" xmlns="http://www.w3.org/2000/svg">
                       <path />
                     </svg>
-                    <div class="card__header-text">
-                      <h3 class="card__title">Indegestibles Blog</h3>
-                      <span class="card__status">Flask, Python</span>
+                    <div class="card-header-text">
+                      <h3 class="card-title">Indegestibles Blog</h3>
+                      <span class="card-status">Flask, Python</span>
                     </div>
                   </div>
-                  <p class="card__description">Personal Blog hosted on Heroku.</p>
+                  <p class="card-description">Personal Blog hosted on Heroku.</p>
                 </div>
               </a>
             </li>
             <li>
               <a class="card-tablet" aria-label="Visit E-commerce Website" target="_blank"
                 href="https://github.com/neezzzy/react-ts-online-store">
-                <img src="./images/e-commerce.webp" class="card__image" alt="E-commerce Website screenshot" />
-                <div class="card__overlay">
-                  <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                <img src="./images/e-commerce.webp" class="card-image" alt="E-commerce Website screenshot" />
+                <div class="card-overlay">
+                  <div class="card-header">
+                    <svg class="card-arc" xmlns="http://www.w3.org/2000/svg">
                       <path />
                     </svg>
-                    <div class="card__header-text">
-                      <h3 class="card__title">E-commerce Website</h3>
-                      <span class="card__status">TypeScript, React</span>
+                    <div class="card-header-text">
+                      <h3 class="card-title">E-commerce Website</h3>
+                      <span class="card-status">TypeScript, React</span>
                     </div>
                   </div>
-                  <p class="card__description">Advanced Cart functionality combined with React Context Api.</p>
+                  <p class="card-description">Advanced Cart functionality combined with React Context Api.</p>
                 </div>
               </a>
             </li>
           </ul>
+          <!-- PROJECT lg SCREEN -->
           <div class="cards-lg-screen">
-            <!-- FLASHCARDS PROJECT -->
+            <!-- FLASHCARD PROJECT -->
             <div class="project-container gs_reveal">
               <div class="gs_reveal_fromRight">
                 <div class="hvr-grow">
@@ -275,12 +310,13 @@
                   </a>
                 </div>
               </div>
+              <!-- END FLASHCARD PROJECT -->
               <div class="project-description gs_reveal card">
                 <div class="card-body">
                   <h3 class="card-title">Flashcard App</h3>
                   <p class="card-text">100+ questions and answers.</p>
                   <p class="card-text">Flashcards cover everything needed to pass the Canadian Citizenship test.</p>
-                  <hr class="thin_border" />
+                  <hr class="thin-border" />
                   <p class="card-text"><i>Built using React Native, Bootstrap and Expo.</i></p>
                   <div class="visit-btn">
                     <a class="btn btn-secondary btn-lg btn-block"
@@ -294,7 +330,6 @@
                 </div>
               </div>
             </div>
-            <!-- FLASHCARDS END -->
             <!-- CHAT PROJECT -->
             <div class="project-container gs_reveal">
               <div class="gs_reveal_fromLeft">
@@ -310,7 +345,7 @@
                 <div class="card-body">
                   <h3 class="card-title">Chatter App</h3>
                   <p class="card-text">Allows multiple users to join the chat and send messages in real time.</p>
-                  <hr class="thin_border" />
+                  <hr class="thin-border" />
                   <p class="card-text"><i>Built using Socket IO, Express.</i></p>
                   <div class="visit-btn">
                     <a class="btn btn-secondary btn-lg btn-block" href="https://github.com/neezzzy/chatter"
@@ -338,7 +373,7 @@
                   <h3 class="card-title">My Foodie Restaurant</h3>
                   <p class="card-text">This project was made to prepare for an interview. I've built a sample template
                     for an imaginary restaurant.</p>
-                  <hr class="thin_border" />
+                  <hr class="thin-border" />
                   <p class="card-text"><i>Built using CSS, Bootstrap, jQuery.</i></p>
                   <div class="visit-btn">
                     <a class="btn btn-secondary btn-lg btn-block" href="https://github.com/neezzzy/MyFoodie-Restaurant"
@@ -368,7 +403,7 @@
                   <h3 class="card-title">Crypto Dashboard</h3>
                   <p class="card-text">I've created this project to learn more about cryptocurrencies and financial
                     charts.</p>
-                  <hr class="thin_border" />
+                  <hr class="thin-border" />
                   <p class="card-text"><i>Built with React, CoinGecko API, Bootstrap, ApexCharts.</i></p>
                   <div class="visit-btn">
                     <a class="btn btn-secondary btn-lg btn-block" href="https://github.com/neezzzy/crypto-board"
@@ -398,7 +433,7 @@
                   <h3 class="card-title">Indegestibles Blog</h3>
                   <p class="card-text"></p>
                   <p class="card-text">Personal Blog hosted on Heroku.</p>
-                  <hr class="thin_border" />
+                  <hr class="thin-border" />
                   <p class="card-text"><i>Built with Flask, Python.</i></p>
                   <div class="visit-btn">
                     <a class="btn btn-secondary btn-lg btn-block" href="https://indigestible-blog-app.herokuapp.com/"
@@ -427,7 +462,7 @@
                   <h3 class="card-title">E-commerce Website</h3>
                   <p class="card-text">Advanced Cart functionality combined with React Context Api allows seamless state
                     sharing across components.</p>
-                  <hr class="thin_border" />
+                  <hr class="thin-border" />
                   <p class="card-text"><i>Built with TypeScript, React.</i></p>
                   <div class="visit-btn">
                     <a class="btn btn-secondary btn-lg btn-block"
@@ -451,7 +486,7 @@
     <!-- ******************** FOOTER  ********************* -->
     <footer class="footer-section pt-5 mt-5" id="footer">
       <div class="container d-flex flex-column align-items-center">
-        <h2 class="footer-title text-center">You can also find me here</h2>
+        <h4 class="footer-title text-center">You can also find me here</h4>
         <div class="col-md-5 d-flex flex-row justify-content-center">
           <!-- github -->
           <a class="btn" href="https://github.com/neezzzy" aria-label="Visit Ruslan Nizamov's github" role="button"
@@ -495,6 +530,19 @@
     particlesJS.load('particles-js', './assets/particles.json', function () {
       console.log('callback - particles.js config loaded');
     });</script>
+
+  <script>
+    let theme_toggler = document.querySelector('#theme_toggler');
+
+    theme_toggler.addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+    });
+
+    function theme() {
+      document.body.classList.toggle("dark");
+    }
+
+  </script>
 </body>
 
 </html>
