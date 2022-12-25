@@ -27,8 +27,8 @@ Here's why I created it:
 
 <!-- ROADMAP -->
 ## Roadmap
-- [ ] Add Dark Theme
-- [X] Add new projects
+- [X] Add Dark Theme
+- [ ] Update new projects
 - [X] Improve performance 
 - [X] Update links
 - [X] Update UI
